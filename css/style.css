@@ -1,11 +1,23 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Pinyon+Script&display=swap');
+
+:root{/*Criação de variaveis*/
+    /*Cores*/
+    --cor-primaria: #31565C;
+    /*Fontes*/
+    --fonte-logo: "Libertinus Sans", sans-serif;
+    /*Tamanho fonte*/
+    --fonte-tamanho-logo: 1.5em; 
+
+
+}
+
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 #cabecalho {
-    background-color: bisque;
     padding: 10px;
 
     /*Estruturar o layout com o grid*/
@@ -15,14 +27,40 @@
 }
 
 #logo {
-    background-color: cadetblue;
+
+    display: flex; /*Utilizando para alinhar ao centro*/
+
+    align-items: center;
+    justify-content: center;
+
     height: 100px;
 }
 
+#logo p{
+    /*Fonte Familia Tipo*/
+    font-family: var(--fonte-logo);
+    font-weight: 700;
+    font-style: normal;
+    font-size: var(--fonte-tamanho-logo); /*rem(Raiz,HTML) ou em (Pai)*/
+
+    line-height: 30px;
+    letter-spacing: 1px;
+    word-spacing: 10px;
+
+    text-align: justify;
+    text-transform: capitalize;
+    text-decoration: none;
+    /*sombra-Eixo X Eixo Y Esfumaçado Cor/Opacidade*/
+    text-shadow: 10px 10px 10px rgba(0,0,0,.5);
+
+    /*R G B*/
+    color: var(--cor-primaria);
+
+}
+
 #menu_principal {
-    background-color: darkgray;
     height: 100px;
-    padding: 10px;
+    padding: 0px 10px;
 
     display: grid;
 
@@ -32,10 +70,18 @@
     place-items: center end;
 }
 
-#itens_menu {
-    background-color: indianred;
-    height: 40px;
-    width: 60%;
+
+#itens_menu ul{
+    padding: 10px;
+    list-style: none;
+
+    display: flex;
+    
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: end;
+
 }
 
 #quem_sou {
@@ -127,19 +173,6 @@
     background-color: skyblue;
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #rodape {
     background-color: burlywood;
