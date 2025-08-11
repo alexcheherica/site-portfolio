@@ -1,38 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Pinyon+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&family=Imperial+Script&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Pinyon+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Pinyon+Script&display=swap');
 
 :root{/*Criação de variaveis*/
     /*Cores*/
-    --cor-primaria: #31565C;
+    --cor-primaria: #cd8d00;
     /*Fontes*/
-    --fonte-logo: "Libertinus Sans", sans-serif;
+    --fonte-logo: "Pinyon Script", sans-serif;
     /*Tamanho fonte*/
-    --fonte-tamanho-logo: 1.5em; 
-
+    --fonte-tamanho-logo: 3.0em;
+    --fonte-menu-principal: "Libertinus Sans", sans-serif;
 
 }
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-#cabecalho {
+#cabecalho{
+    /*width style color*/
+    border-bottom: 2px solid var(--cor-primaria);
+    /*eixo X eixo Y esfumaçado cor*/
+    box-shadow: 5px opx 5px rgba(0,0,0,.5);
     padding: 10px;
 
     /*Estruturar o layout com o grid*/
     display: grid;
+    /*1º coluna 2º coluna*/
     grid-template-columns: 1fr 7fr;
+    /*row colum*/
     gap: 0px 100px;
+
+    background-color: aliceblue;
 }
 
 #logo {
-
     display: flex; /*Utilizando para alinhar ao centro*/
-
     align-items: center;
     justify-content: center;
-
     height: 100px;
 }
 
@@ -42,8 +48,10 @@
     font-weight: 700;
     font-style: normal;
     font-size: var(--fonte-tamanho-logo); /*rem(Raiz,HTML) ou em (Pai)*/
+    background-color: none;
+    width: 300px;
 
-    line-height: 30px;
+    line-height: 50px;
     letter-spacing: 1px;
     word-spacing: 10px;
 
@@ -51,7 +59,7 @@
     text-transform: capitalize;
     text-decoration: none;
     /*sombra-Eixo X Eixo Y Esfumaçado Cor/Opacidade*/
-    text-shadow: 10px 10px 10px rgba(0,0,0,.5);
+    /*text-shadow: 10px 10px 10px rgba(0,0,0,.5);*/
 
     /*R G B*/
     color: var(--cor-primaria);
@@ -61,27 +69,38 @@
 #menu_principal {
     height: 100px;
     padding: 0px 10px;
-
     display: grid;
-
     grid-template-columns: 1fr;
-
     /*align-items(vertical) justify-items(horizontal)*/
     place-items: center end;
+    font-family:var(--fonte-menu-principal);
+    font-weight: 700;
+    font-style: normal;
 }
 
 
 #itens_menu ul{
     padding: 10px;
     list-style: none;
-
     display: flex;
-    
-    gap: 30px;
+    gap: 10px;
     flex-wrap: wrap;
     align-items: end;
     justify-content: end;
+    font-size: 25px;
 
+}
+
+#itens_menu li{
+    /*background-color: var(--cor-primaria);*/
+    padding: 10px;
+
+}
+
+#itens_menu li:hover{
+    border-bottom: 5px solid var(--cor-primaria);
+    color: var(--cor-primaria);
+    cursor: pointer;
 }
 
 #quem_sou {
@@ -112,7 +131,6 @@
 
 #titulo_informacoes {
     background-color: aliceblue;
-
 }
 
 #botao_informacoes {
@@ -122,7 +140,6 @@
 
 #redes_sociais_informacoes {
     background-color: darkorchid;
-
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
