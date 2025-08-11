@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#cabecalho {
+    background-color: bisque;
+    padding: 10px;
+
+    /*Estruturar o layout com o grid*/
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    gap: 0px 100px;
+}
+
+#logo {
+    background-color: cadetblue;
+    height: 100px;
+}
+
+#menu_principal {
+    background-color: darkgray;
+    height: 100px;
+    padding: 10px;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    /*align-items(vertical) justify-items(horizontal)*/
+    place-items: center end;
+}
+
+#itens_menu {
+    background-color: indianred;
+    height: 40px;
+    width: 60%;
+}
+
+#quem_sou {
+    background-color: darkkhaki;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 10px;
+
+}
+
+#informacoes_texto {
+    background-color: lightblue;
+
+}
+
+#informacoes_texto {
+    background-color: midnightblue;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 1fr 1fr;
+    gap: 10px 0px;
+
+}
+
+#titulo_informacoes {
+    background-color: aliceblue;
+
+}
+
+#botao_informacoes {
+    background-color: brown;
+
+}
+
+#redes_sociais_informacoes {
+    background-color: darkorchid;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    place-items: center start;
+}
+
+.redes_sociais {
+    background-color: powderblue;
+    height: 50px;
+    width: 50px;
+}
+
+#foto {
+    background-color: lightblue;
+
+}
+
+#pag_sobre{
+    background-color: bisque;
+    height: 500px;
+}
+
+#titulo_sobre{
+    background-color: rgb(8, 85, 85);
+    height: 10%;
+    color: aliceblue;
+    text-align: center;
+    
+}
+#sessao_sobre{
+    background-color: plum;
+    height: 450px;
+    padding: 10px;
+    
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 10px;
+}
+
+#foto_sessao{
+    background-color: firebrick;
+    
+}
+
+#iam_marlon{
+    background-color: skyblue;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#rodape {
+    background-color: burlywood;
+    height: 100px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr 2fr;
+
+}
+
+#nome_marca {
+    background-color: navy;
+    color: aliceblue;
+    text-align: center;
+}
+
+#redes_sociais_rodape {
+    background-color: crimson;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    place-items: center center;
+
+}
+
+.redes_sociais_rodape {
+    background-color: darkseagreen;
+    height: 50px;
+    width: 50px;
+}
+
+#Bedimcode {
+    background-color: blueviolet;
+    color: aliceblue;
+    text-align: center;
+
+}
