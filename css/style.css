@@ -78,7 +78,6 @@
     font-style: normal;
 }
 
-
 #itens_menu ul{
     padding: 10px;
     list-style: none;
@@ -103,9 +102,30 @@
     cursor: pointer;
 }
 
+#quem_sou:hoover{ /*Pseudoclasse*/
+    background: radial-gradient(var(--cor-primaria),rgb(78,136,78));
+
+}
+
 #quem_sou {
-    background-color: darkkhaki;
+
+    transition: 1s;
+    /*background-image: url(/midias/image/mulher.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;*/
+
+    /* plano de fundo com gradiente linear - (ângulo,cor,cor) */
+    /*background: linear-gradient(45deg, red,var(--cor-primaria));
+    background-attachment: fixed;*/
+
+    /* plano de fundo com gradiente radial - (ângulo,cor,cor) */
+    background: radial-gradient(rgb(78,136,78),var(--cor-primaria));
+    background-attachment: fixed;
+
     padding: 10px;
+
+
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -160,6 +180,7 @@
 #pag_sobre{
     background-color: bisque;
     height: 500px;
+    display: none;
 }
 
 #titulo_sobre{
@@ -167,6 +188,7 @@
     height: 10%;
     color: aliceblue;
     text-align: center;
+    display: none;
     
 }
 #sessao_sobre{
@@ -175,7 +197,7 @@
     padding: 10px;
     
 
-    display: grid;
+    display: none;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 0px 10px;
@@ -195,7 +217,7 @@
     background-color: burlywood;
     height: 100px;
 
-    display: grid;
+    display: none;
     grid-template-columns: 1fr;
     grid-template-rows: 3fr 1fr 2fr;
 
@@ -210,7 +232,7 @@
 #redes_sociais_rodape {
     background-color: crimson;
 
-    display: grid;
+    display: none;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     place-items: center center;
