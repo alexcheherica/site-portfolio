@@ -8,7 +8,7 @@
     /*Fontes*/
     --fonte-logo: "Pinyon Script", sans-serif;
     /*Tamanho fonte*/
-    --fonte-tamanho-logo: 3.0em;
+    --fonte-tamanho-logo: 2.0em;
     --fonte-menu-principal: "Libertinus Sans", sans-serif;
 
 }
@@ -120,61 +120,77 @@
     background-attachment: fixed;*/
 
     /* plano de fundo com gradiente radial - (ângulo,cor,cor) */
-    background: radial-gradient(rgb(78,136,78),var(--cor-primaria));
+    background: radial-gradient(rgb(224, 224, 224),var(--cor-primaria));
     background-attachment: fixed;
 
     padding: 10px;
-
-
-
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0px 10px;
+    justify-items: center;
 
 }
 
 #informacoes_texto {
-    background-color: lightblue;
-
-}
-
-#informacoes_texto {
-    background-color: midnightblue;
     padding: 10px;
-
     display: grid;
     grid-template-columns: 1fr;
+
+    /*Tamanho daslinhas em ordem*/
     grid-template-rows: 4fr 1fr 1fr;
     gap: 10px 0px;
+
 
 }
 
 #titulo_informacoes {
-    background-color: aliceblue;
+    font-family: var(--fonte-menu-principal);
+    color: aliceblue;
+    font-size: 2rem;
+
 }
 
-#botao_informacoes {
-    background-color: brown;
 
+#botao_informacoes button{
+    padding: 10px;
+    border: none;
+    background-color: #f5e0b3;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--cor-primaria);
+
+
+    /*Arredondamento de bordas*/
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,.5);
+
+}
+
+#botao_informacoes button:hover{
+    background-color:black;
 }
 
 #redes_sociais_informacoes {
-    background-color: darkorchid;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     place-items: center start;
 }
 
-.redes_sociais {
-    background-color: powderblue;
-    height: 50px;
-    width: 50px;
+.redes_sociais:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    
 }
 
 #foto {
-    background-color: lightblue;
+    padding: 10px;
 
+}
+
+#foto figure img{
+    border-radius: 1000px;
+    box-shadow: 5px 10px 10px rgba(0,0,0,.5)
 }
 
 #pag_sobre{
