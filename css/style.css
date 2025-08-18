@@ -32,7 +32,6 @@
     /*row colum*/
     gap: 0px 100px;
 
-    background-color: aliceblue;
 }
 
 #logo {
@@ -67,7 +66,6 @@
 }
 
 #menu_principal {
-    height: 100px;
     padding: 0px 10px;
     display: grid;
     grid-template-columns: 1fr;
@@ -107,7 +105,7 @@
 
 }
 
-#quem_sou {
+#quem_sou.desktop{
 
     transition: 1s;
     /*background-image: url(/midias/image/mulher.jpg);
@@ -128,6 +126,33 @@
     grid-template-columns: 1fr 1fr;
     gap: 0px 10px;
     justify-items: center;
+
+}
+
+#quem_sou.mobile{
+
+    transition: 1s;
+    /*background-image: url(/midias/image/mulher.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;*/
+
+    /* plano de fundo com gradiente linear - (ângulo,cor,cor) */
+    /*background: linear-gradient(45deg, red,var(--cor-primaria));
+    background-attachment: fixed;*/
+
+    /* plano de fundo com gradiente radial - (ângulo,cor,cor) */
+    background: radial-gradient(rgb(224, 224, 224),var(--cor-primaria));
+    background-attachment: fixed;
+
+    padding: 10px;
+
+    display: none;
+
+    grid-template-columns: 1fr;
+    gap: 0px 10px;
+
+    justify-items: start;
 
 }
 
@@ -265,5 +290,25 @@
     background-color: blueviolet;
     color: aliceblue;
     text-align: center;
+
+}
+/*Adaptação para Mobile*/
+@media(max-width: 800px){
+
+#cabecalho{
+    grid-template-columns: 1fr;
+
+}
+
+#itens_menu ul{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu_principal{
+    place-items: center center;
+
+}
 
 }
