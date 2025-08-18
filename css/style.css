@@ -310,5 +310,11 @@
     place-items: center center;
 
 }
-
+/*Formato de interruptor*/
+#quem_sou.desktop{
+    display: none;
+}
+#quem_sou.mobile{
+    display: grid;
+}
 }
