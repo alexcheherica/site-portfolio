@@ -168,10 +168,10 @@
 
 }
 
-#titulo_informacoes {
+#titulo_informacoes h1{
     font-family: var(--fonte-menu-principal);
     color: aliceblue;
-    font-size: 2rem;
+    font-size: 3em;
 
 }
 
@@ -293,7 +293,7 @@
 
 }
 
-#cab.mobile{
+.mobile{
     display: none;
 }
 /*Adaptação para Mobile*/
@@ -302,10 +302,12 @@
 #menu_principal{
     display: none;
 }
-
-.mobile{
-    display: block;
+#menu_hamburguer{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center center;
 }
+
 /*Formato de interruptor*/
 #quem_sou.desktop{
     display: none;
