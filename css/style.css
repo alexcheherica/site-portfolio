@@ -292,28 +292,25 @@
     text-align: center;
 
 }
+
+#cab.mobile{
+    display: none;
+}
 /*Adaptação para Mobile*/
 @media(max-width: 800px){
 
-#cabecalho{
-    grid-template-columns: 1fr;
-
-}
-
-#itens_menu ul{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 #menu_principal{
-    place-items: center center;
+    display: none;
+}
 
+.mobile{
+    display: block;
 }
 /*Formato de interruptor*/
 #quem_sou.desktop{
     display: none;
 }
+
 #quem_sou.mobile{
     display: grid;
 }
